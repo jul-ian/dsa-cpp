@@ -1,9 +1,10 @@
-template <typename E>
+template <typename F>
 class SNode {
 private:
-    E elem;
-    SNode<E> *next;
-    friend class SLinkedList<E>;
+    F elem;
+    SNode<F> *next;
+    template <typename E>
+    friend class SLinkedList;
 };
 
 template <typename E>
